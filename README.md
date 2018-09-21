@@ -14,4 +14,5 @@ This application was developped exclusively for Android and can be a good exempl
 Contents :
 
 Grid or column thumbs with scrolling and autopaging. All the images are cached with asynchronous loading.
+
 There is a navigation drawer and tabs can be added to a menu tab with autocentering.
