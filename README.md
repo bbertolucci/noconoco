@@ -11,7 +11,7 @@ This source code was uploaded with a "demo" version (offline version). There is 
 
 This application was developped exclusively for Android and can be a good exemple (I hope) for VOD application.
 
-Contents :
+## Contents
 
 Grid or column thumbs with scrolling and autopaging. All the images are cached with asynchronous loading.
 There is a navigation drawer and tabs can be added to a menu tab with autocentering.
