@@ -14,5 +14,14 @@ This application was developped exclusively for Android and can be a good exempl
 Contents :
 
 Grid or column thumbs with scrolling and autopaging. All the images are cached with asynchronous loading.
-
 There is a navigation drawer and tabs can be added to a menu tab with autocentering.
+
+![First_image](https://github.com/bbertolucci/noconoco/blob/master/1.gif)
+
+There is custom media loader. Video can be viewed in landscape or portrait. There was also a forum scrapping to get all the last comments on each video.
+
+![Second_image](https://github.com/bbertolucci/noconoco/blob/master/2.gif)
+
+There is a parental control, and some custom dialog window to choose language/subtitle and thumb quality. Chromecast was also intergrated with a custom UI on tv. Twitch icon is also a button to access the live streaming of this channel (now it's not working), user could also login and post on the irc channel.
+
+![Third_image](https://github.com/bbertolucci/noconoco/blob/master/3.gif)
