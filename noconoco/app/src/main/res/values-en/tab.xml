@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="last_video">The most recent</string>
+     <string name="free_video">Free videos</string>
+     <string name="playlist">My playlist</string>
+     <string name="unread">Not watched</string>
+     <string name="read">Watched</string>
+     <string name="most_popular">The most popular</string>
+     <string name="recommended">Recommended</string>
+     <string name="bought">Videos bought</string>
+     <string name="search">My search</string>
+     <string name="playlistinfo">Add or remove videos from my playlist</string>
+     <string name="favoritesinfo">Add or remove videos from my favorites</string>
+     <string name="favorites">My favorites</string>
+     <string name="recorded_video">Saved</string>
+</resources>

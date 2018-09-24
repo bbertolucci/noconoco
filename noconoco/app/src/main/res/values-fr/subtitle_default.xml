@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subtitle_array">
+        <item>Pas de sous-titres</item>
+        <item>Anglais</item>
+        <item>Français</item>
+        <item>Japonais</item>
+        <item>Coréen</item>
+        <item>Thaï</item>
+    </string-array>
+</resources>

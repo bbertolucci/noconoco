@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <!--TextView
+        android:id="@+id/tabTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#00ace7"
+        android:textSize="15sp"
+        android:background="@drawable/bordertopbottom"
+        android:paddingBottom="1dp"/-->
+ <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <GridView 
+          android:id="@+id/gridView" 
+          android:layout_width="fill_parent" 
+          android:layout_height="fill_parent" 
+          android:layout_margin="0dp" 
+          android:layout_marginTop="2dp" 
+          android:horizontalSpacing="1dp" 
+          android:verticalSpacing="1dp"
+          android:listSelector="@android:color/transparent" 
+          android:stretchMode="columnWidth"
+          android:smoothScrollbar="true"
+          android:scrollingCache="false"
+    	  android:animationCache="false"
+    	  /> 
+ </android.support.v4.widget.SwipeRefreshLayout>
+ <RelativeLayout
+    android:id="@+id/layout_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    android:layout_margin="5dp" >
+		<ImageView
+		    android:id="@+id/ic_refresh"
+			android:contentDescription="@string/none"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+    		android:layout_alignParentLeft="true"
+		    android:src="@drawable/icon_reload_refresh"/>
+	</RelativeLayout>
+</RelativeLayout>

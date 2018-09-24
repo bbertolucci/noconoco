@@ -1,0 +1,48 @@
+{
+  "user": {
+    "id_user": 39,
+    "username": "[DEMO]Username",
+    "geoloc": "JP"
+  },
+  "options": {
+    "do_not_track": 0,
+    "quality": "HD_1080",
+    "quality_mobile": "HD_1080",
+    "quality_auto": 1,
+    "language": "fr",
+    "audio_language": "original",
+    "sub_language": null,
+    "autoswitchdelay": 10
+  },
+  "avatars": {
+    "avatar_25": "https://media.noco.tv/profil/avatar/25x25/avatar-39-10681.png",
+    "avatar_32": "https://media.noco.tv/profil/avatar/32x32/avatar-39-10681.png",
+    "avatar_45": "https://media.noco.tv/profil/avatar/45x45/avatar-39-10681.png",
+    "avatar_128": "https://media.noco.tv/profil/avatar/128x128/avatar-39-10681.png",
+    "avatar_256": "https://media.noco.tv/profil/avatar/256x256/avatar-39-10681.png"
+  },
+  "banner": {
+    "id_banner": 143,
+    "banner": "https://media.noco.tv/profil/slider/nol006.jpg"
+  },
+  "subscriptions": {
+    "GUA": {
+      "name": "Standard",
+      "soutien": 0,
+      "date_start": "2015-02-04 23:13:51",
+      "date_end": "2018-05-16 15:45:00"
+    },
+    "NOL": {
+      "name": "Standard",
+      "soutien": 1,
+      "date_start": "2014-08-27 23:08:14",
+      "date_end": "2018-05-16 15:45:00"
+    },
+    "OLY": {
+      "name": "Standard",
+      "soutien": 0,
+      "date_start": "2013-08-27 06:25:35",
+      "date_end": "2018-05-16 15:45:00"
+    }
+  }
+}

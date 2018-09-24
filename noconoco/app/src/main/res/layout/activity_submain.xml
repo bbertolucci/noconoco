@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_scroll_gradient_grey"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/lineartab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hsv"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/black">
+
+        <RelativeLayout
+            android:id="@+id/listlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_img_blue_noco_fb_default"
+            tools:ignore="RtlHardcoded">
+
+            <ImageButton
+                android:id="@+id/listic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_grid_list"
+                android:contentDescription="@string/none"
+                android:padding="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

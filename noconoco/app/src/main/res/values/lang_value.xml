@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lang_value_array">
+        <item>original</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>jp</item>
+        <item>ko</item>
+        <item>th</item>
+    </string-array>
+</resources>

@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="0dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_popup_blue_noco"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.bbproject.noconoco.custom.view.MyTextView
+                android:id="@+id/qualitytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:text="@string/config_video_quality"
+                android:textColor="@color/light_font"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qualitytext"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.bbproject.noconoco.custom.view.SquareLayout
+                    android:id="@+id/LQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_btn_square_config"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="LQ"
+                        android:textColor="@android:color/white"
+                        tools:ignore="HardcodedText" />
+                </com.bbproject.noconoco.custom.view.SquareLayout>
+
+                <com.bbproject.noconoco.custom.view.SquareLayout
+                    android:id="@+id/MQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_btn_square_config"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="MQ"
+                        android:textColor="@android:color/white"
+                        tools:ignore="HardcodedText" />
+                </com.bbproject.noconoco.custom.view.SquareLayout>
+
+                <com.bbproject.noconoco.custom.view.SquareLayout
+                    android:id="@+id/TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_btn_square_config"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="TV"
+                        android:textColor="@android:color/white"
+                        tools:ignore="HardcodedText" />
+                </com.bbproject.noconoco.custom.view.SquareLayout>
+
+                <com.bbproject.noconoco.custom.view.SquareLayout
+                    android:id="@+id/HD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_btn_square_config"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="HD"
+                        android:textColor="@android:color/white"
+                        tools:ignore="HardcodedText" />
+                </com.bbproject.noconoco.custom.view.SquareLayout>
+
+                <com.bbproject.noconoco.custom.view.SquareLayout
+                    android:id="@+id/FHD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_btn_square_config"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="FHD"
+                        android:textColor="@android:color/white"
+                        tools:ignore="HardcodedText" />
+                </com.bbproject.noconoco.custom.view.SquareLayout>
+
+            </LinearLayout>
+
+            <com.bbproject.noconoco.custom.view.MyTextView
+                android:id="@+id/langtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/quality"
+                android:layout_marginTop="10dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:text="@string/config_video_lang"
+                android:textColor="@color/light_font"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/btnLang"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/langtext"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_rounded">
+
+                <TextView
+                    android:id="@+id/textLang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="@string/action_settings"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <com.bbproject.noconoco.custom.view.MyTextView
+                android:id="@+id/subtitletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btnLang"
+                android:layout_marginTop="10dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:text="@string/config_video_sub"
+                android:textColor="@color/light_font"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/btnSubtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitletext"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_rounded">
+
+                <TextView
+                    android:id="@+id/textSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="@string/action_settings"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/container"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-25dp"
+        android:background="@drawable/icon_close"
+        android:contentDescription="@string/close" />
+
+</RelativeLayout>

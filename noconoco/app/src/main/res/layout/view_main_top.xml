@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/left_big_handle"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_status_bar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/webviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/left_big_handle"
+        android:layout_toRightOf="@+id/left_big_handle"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/normalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:layout_toEndOf="@+id/left_big_handle"
+        android:layout_toRightOf="@+id/left_big_handle"
+        android:visibility="visible"
+        android:background="@android:color/black"
+        android:focusableInTouchMode="true">
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/icon_search"
+            android:contentDescription="@string/none" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/icon_menu_drawer"
+            android:contentDescription="@string/none"
+            android:onClick="openDrawer" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toEndOf="@+id/menu_button"
+            android:layout_toLeftOf="@+id/searchButton"
+            android:layout_toRightOf="@+id/menu_button"
+            android:layout_toStartOf="@+id/searchButton"
+            android:background="@drawable/back_input_rounded"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:hint="@string/search"
+            android:textColorHint="@android:color/darker_gray"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:padding="5dip"
+            android:singleLine="true"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:background="@drawable/back_scroll_gradient_grey"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relativetab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="4dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/about2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/back_btn_blue_transparent3"
+                        android:contentDescription="@string/none"
+                        android:padding="16dp" />
+
+                    <Button
+                        android:id="@+id/about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_btn_blue_transparent4"
+                        android:shadowColor="#ff000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="1"
+                        android:text="\?"
+                        android:textColor="@color/light_font"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lineartab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/relativetab"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/hsv"
+            android:layout_marginTop="5dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blueinfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/relPager"
+            android:background="@drawable/back_view_gradient_blue_noco"
+            android:visibility="gone">
+
+            <com.bbproject.noconoco.custom.view.MyTextView
+                android:id="@+id/textblueinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/close"
+                android:layout_toStartOf="@+id/close"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:scrollHorizontally="true"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/light_font"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="2dp"
+                android:background="@drawable/back_btn_close_white"
+                android:text="@string/close"
+                android:textColor="@color/light_font"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_img_blue_noco_fb_selector">
+
+            <ImageButton
+                android:id="@+id/listic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_grid_list"
+                android:contentDescription="@string/none"
+                android:padding="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+{
+  "fr": {
+    "audio_lang": {
+      "fr": "français",
+      "en": "French"
+    },
+    "video_list": {
+      "none": {
+        "sub_lang": {
+          "fr": "none",
+          "en": "none"
+        },
+        "quality_list": {
+          "LQ": {
+            "id_show": 39144,
+            "quality_key": "LQ",
+            "videobitrate": 500000,
+            "audiobitrate": 96000,
+            "framerate": 25,
+            "framecount": 11118,
+            "res_width": 512,
+            "res_lines": 288,
+            "duration": 444720,
+            "filesize": 33251049,
+            "mosaique": "2017-02-10 18:45:28",
+            "modified": "2017-02-10 18:45:28"
+          },
+          "HQ": {
+            "id_show": 39144,
+            "quality_key": "HQ",
+            "videobitrate": 1479000,
+            "audiobitrate": 127976,
+            "framerate": 50,
+            "framecount": 22238,
+            "res_width": 688,
+            "res_lines": 384,
+            "duration": 444760,
+            "filesize": 89661603,
+            "mosaique": "2017-02-10 18:45:28",
+            "modified": "2017-02-10 18:45:28"
+          },
+          "TV": {
+            "id_show": 39144,
+            "quality_key": "TV",
+            "videobitrate": 2434000,
+            "audiobitrate": 127976,
+            "framerate": 50,
+            "framecount": 22238,
+            "res_width": 1024,
+            "res_lines": 576,
+            "duration": 444760,
+            "filesize": 142908633,
+            "mosaique": "2017-02-10 18:45:28",
+            "modified": "2017-02-10 18:45:28"
+          },
+          "HD_720": {
+            "id_show": 39144,
+            "quality_key": "HD_720",
+            "videobitrate": 3406000,
+            "audiobitrate": 127976,
+            "framerate": 50,
+            "framecount": 22238,
+            "res_width": 1280,
+            "res_lines": 720,
+            "duration": 444760,
+            "filesize": 197368802,
+            "mosaique": "2017-02-10 18:45:28",
+            "modified": "2017-02-10 18:45:28"
+          }
+        }
+      }
+    }
+  }
+}

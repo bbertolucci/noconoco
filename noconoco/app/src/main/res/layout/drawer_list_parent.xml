@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:contentDescription="@string/none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_folder"
+        android:paddingLeft="10dp"
+        android:id="@+id/imgRepo"
+        android:visibility="gone"/>
+
+    <com.bbproject.noconoco.custom.view.MyTextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/imgRepo"
+        android:layout_toEndOf="@+id/imgRepo"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+		android:scrollHorizontally="true"
+		android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="14sp"
+     />
+    <com.bbproject.noconoco.custom.view.smartimage.SmartImageView
+        android:id="@+id/nolifelive"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/group"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        />
+</RelativeLayout>

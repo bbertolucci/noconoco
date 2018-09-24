@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="week">week</string>
+    <string name="day">day</string>
+    <string name="hour">hour</string>
+    <string name="minute">minute</string>
+    <string name="second">second</string>
+    <string name="default_time">0 second ago</string>
+    <string name="plural">s</string>
+    <string name="prefix"></string>
+    <string name="suffix"> ago</string>
+</resources>

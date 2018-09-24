@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="year">an</string>
+    <string name="month">mois</string>
+    <string name="week">semaine</string>
+    <string name="day">jour</string>
+    <string name="hour">heure</string>
+    <string name="minute">minute</string>
+    <string name="second">seconde</string>
+    <string name="default_time">Il y a 0 seconde</string>
+    <string name="plural">s</string>
+    <string name="prefix">Il y a&#160;</string>
+    <string name="suffix"></string>
+</resources>

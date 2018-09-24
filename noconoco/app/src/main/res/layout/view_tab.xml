@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<View
+    android:id="@+id/separator"
+    android:layout_width="2dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/darker_gray" />
+<LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <View
+ 		android:layout_width="fill_parent"
+		android:layout_height="4dp"
+		android:background="#00ace7"
+		android:id="@+id/tab_top"
+		android:visibility="invisible"/>
+      <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/id"
+              android:textColor="@android:color/white"
+              android:padding="10dp"
+              android:background="@drawable/selector_tab_custom"/>
+      <View
+ 		android:layout_width="fill_parent"
+		android:layout_height="4dp"
+		android:background="#00ace7"
+		android:id="@+id/tab_bottom"
+		android:visibility="invisible"/>
+</LinearLayout>
+</LinearLayout>

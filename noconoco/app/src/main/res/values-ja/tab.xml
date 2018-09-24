@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="last_video">最新</string>
+     <string name="free_video">無料ビデオ</string>
+     <string name="playlist">マイプレイリスト</string>
+     <string name="unread">未視聴</string>
+     <string name="read">視聴済み</string>
+     <string name="most_popular">一番人気</string>
+     <string name="recommended">おすすめ</string>
+     <string name="bought">買ったビデオ</string>
+     <string name="search">マイ検索</string>
+     <string name="playlistinfo">マイプレイリストのビデオを追加するか削除する。</string>
+     <string name="favoritesinfo">お気に入りビデオを追加するか削除する。</string>
+     <string name="favorites">お気に入り</string>
+     <string name="recorded_video">保存済み</string>
+</resources>

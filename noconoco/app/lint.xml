@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconColors">
+        <ignore path="src/main/res/drawable/ic_action_playlist_mini.png" />
+        <ignore path="src/main/res/drawable/ic_action_refresh.png" />
+        <ignore path="src/main/res/drawable/ic_action_replay2.png" />
+        <ignore path="src/main/res/drawable/loading_icon.png" />
+        <ignore path="src/main/res/drawable/loading_icon_end.png" />
+    </issue>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/btn_rating_star_off_normal_holo_dark.png" />
+        <ignore path="src/main/res/drawable/btn_rating_star_on_normal_holo_dark.png" />
+        <ignore path="src/main/res/drawable/close_icon.png" />
+        <ignore path="src/main/res/drawable/csa10.png" />
+        <ignore path="src/main/res/drawable/csa12.png" />
+        <ignore path="src/main/res/drawable/csa16.png" />
+        <ignore path="src/main/res/drawable/csa18.png" />
+        <ignore path="src/main/res/drawable/disconnect.png" />
+        <ignore path="src/main/res/drawable/download.png" />
+        <ignore path="src/main/res/drawable/flower.png" />
+        <ignore path="src/main/res/drawable/folder.png" />
+        <ignore path="src/main/res/drawable/ic_action_playlist_mini.png" />
+        <ignore path="src/main/res/drawable/ic_action_refresh.png" />
+        <ignore path="src/main/res/drawable/ic_action_replay2.png" />
+        <ignore path="src/main/res/drawable/ic_action_view_as_grid.png" />
+        <ignore path="src/main/res/drawable/ic_action_view_as_list.png" />
+        <ignore path="src/main/res/drawable/ic_drawer.png" />
+        <ignore path="src/main/res/drawable/icon_new4.png" />
+        <ignore path="src/main/res/drawable/loading_icon.png" />
+        <ignore path="src/main/res/drawable/loading_icon_end.png" />
+        <ignore path="src/main/res/drawable/mark_noread.png" />
+        <ignore path="src/main/res/drawable/mark_read.png" />
+        <ignore path="src/main/res/drawable/noco1.png" />
+        <ignore path="src/main/res/drawable/noco_app_logo.png" />
+        <ignore path="src/main/res/drawable/noco_blanc.png" />
+        <ignore path="src/main/res/drawable/noco_downloaded.png" />
+        <ignore path="src/main/res/drawable/noco_favoris.png" />
+        <ignore path="src/main/res/drawable/oeil.png" />
+        <ignore path="src/main/res/drawable/parental.png" />
+        <ignore path="src/main/res/drawable/pause_mini.png" />
+        <ignore path="src/main/res/drawable/play.png" />
+        <ignore path="src/main/res/drawable/play_mini.png" />
+        <ignore path="src/main/res/drawable/play_mini2.png" />
+        <ignore path="src/main/res/drawable/sansoeil.png" />
+        <ignore path="src/main/res/drawable/sansoeilblanc.png" />
+        <ignore path="src/main/res/drawable/search.png" />
+        <ignore path="src/main/res/drawable/sound_mini.png" />
+        <ignore path="src/main/res/drawable/status_bar_close_off9.png" />
+        <ignore path="src/main/res/drawable/twitch_tv.png" />
+        <ignore path="src/main/res/drawable/wait.png" />
+    </issue>
+</lint>

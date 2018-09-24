@@ -1,0 +1,29 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.bbproject.noconoco"
+        minSdkVersion 14
+        targetSdkVersion 28
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7'
+    implementation 'com.android.support:mediarouter-v7'
+    implementation 'com.google.android.gms:play-services-cast-framework:16.0.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation files('libs/android-smart-image-view-1.0.0.jar')
+    //implementation files('libs/jerklib.jar')
+}

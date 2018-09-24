@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_font">#FBFBFB</color>
+    <color name="text_shadow">#FF000000</color>
+    <color name="text_shadow_white">#FFFFFF</color>
+    <color name="blue_noco">#ff0fa4e2</color>
+    <color name="blue_fb">#ff3b5998</color>
+    <color name="blue_other">#dd0066aa</color>
+    <color name="blue_noco_transparent">#880fa4e2</color>
+    <color name="black_transparent">#88000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_noco_fade">#440fa4e2</color>
+    <color name="blue_text">#00AAFF</color>
+</resources>

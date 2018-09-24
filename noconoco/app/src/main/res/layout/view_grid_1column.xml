@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#222"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.35">
+
+        <com.bbproject.noconoco.custom.view.smartimage.SmartImageView
+            android:id="@+id/image1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true" />
+
+        <RelativeLayout
+            android:id="@+id/bottominfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#AA000000"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/light_font"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <RelativeLayout
+                android:id="@+id/csa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/csadraw"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@string/none"
+                    android:src="@drawable/selector_csa"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/csa"
+                android:layout_toStartOf="@+id/csa">
+
+                <RelativeLayout
+                    android:id="@+id/alreadyviewed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/back_icon_blue"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/icon_read"
+                        android:contentDescription="@string/none" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cantbeviewed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/back_icon_dark_grey"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/icon_notread"
+                        android:contentDescription="@string/none" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgplaylist"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/viewed"
+                android:layout_toStartOf="@+id/viewed"
+                android:contentDescription="@string/none"
+                android:src="@drawable/icon_playlist_pin"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgfavorites"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/imgplaylist"
+                android:layout_toStartOf="@+id/imgplaylist"
+                android:contentDescription="@string/none"
+                android:src="@drawable/icon_favorites"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgdownload"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/imgfavorites"
+                android:layout_toStartOf="@+id/imgfavorites"
+                android:contentDescription="@string/none"
+                android:src="@drawable/selector_download"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.65">
+
+        <RelativeLayout
+            android:id="@+id/familyinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.bbproject.noconoco.custom.view.MyTextView
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:textColor="@color/light_font"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+
+        <com.bbproject.noconoco.custom.view.MyTextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/familyinfo"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:textColor="@color/blue_noco"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <com.bbproject.noconoco.custom.view.MyTextView
+            android:id="@+id/resume"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_stars"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/title1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="false"
+            android:textColor="@color/blue_noco"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <include
+            android:id="@+id/layout_stars"
+            layout="@layout/view_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            tools:ignore="RtlHardcoded" />
+
+        <com.bbproject.noconoco.custom.view.MyTextView
+            android:id="@+id/published_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/layout_stars"
+            android:ellipsize="marquee"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="false"
+            android:textColor="@color/light_font"
+            android:textSize="10sp"
+            tools:ignore="RtlHardcoded,SmallSp" />
+    </RelativeLayout>
+
+</LinearLayout>

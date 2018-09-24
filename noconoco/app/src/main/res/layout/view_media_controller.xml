@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/remaining_time"
+        android:layout_marginTop="7dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="00:00:00"
+        android:textColor="@color/blue_noco"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remaining_time"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/total_time"
+        android:layout_toRightOf="@+id/total_time">
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/icon_play_3"
+            android:contentDescription="@string/none" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/remaining_time"
+        android:layout_marginTop="5dp"
+        android:paddingRight="45dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <ImageButton
+            android:id="@+id/sound"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:background="@drawable/icon_sound"
+            android:contentDescription="@string/none" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/mediacontroller_progress"
+        style="@style/CustomSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remaining_time"
+        android:layout_marginLeft="-14dp"
+        android:layout_marginRight="-14dp"
+        android:layout_toEndOf="@+id/left"
+        android:layout_toLeftOf="@+id/right"
+        android:layout_toRightOf="@+id/left"
+        android:layout_toStartOf="@+id/right"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:maxHeight="6dip"
+        android:minHeight="6dip"
+        android:paddingLeft="13dp"
+        android:paddingRight="17dp"
+        android:progress="0"
+        android:secondaryProgress="0"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/remaining_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mediacontroller_progress"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="00:00:00"
+        android:textColor="@color/blue_noco"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</RelativeLayout>

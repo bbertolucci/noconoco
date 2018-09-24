@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="last_video">Les plus récentes</string>
+     <string name="free_video">Vidéos gratuites</string>
+     <string name="playlist">Ma playlist</string>
+     <string name="unread">Non vues</string>
+     <string name="read">Vues</string>
+     <string name="most_popular">Les plus populaires</string>
+     <string name="recommended">Recommandées</string>
+     <string name="bought">Vidéos achetées</string>
+     <string name="search">Ma recherche</string>
+     <string name="playlistinfo">Ajouter ou supprimer de ma playlist</string>
+     <string name="favoritesinfo">Ajouter ou supprimer de mes favorites</string>
+     <string name="favorites">Mes favorites</string>
+     <string name="recorded_video">Enregistrées</string>
+</resources>

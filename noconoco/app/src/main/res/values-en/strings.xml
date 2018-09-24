@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">noconoco</string>
+    <string name="app_name_off">noconoco offline</string>
+    <string name="action_settings">Settings</string>
+    <string name="thumbnail_low">Low quality</string>
+    <string name="thumbnail_normal">Normal quality</string>
+    <string name="thumbnail_high">High quality</string>
+    <string name="error_webview">Error during the loading of the page : \nWebsite not available</string>
+	<string name="loading_thumb">Loading thumbnails</string>
+	<string name="loading_retry">Connection attempt</string>
+	<string name="loading_progress">In progress&#8230;</string>
+	<string name="network_error">Network error&#8230;</string>
+	<string name="about">Application created by Bertolucci Bruno (King Pingouin) for noco.</string>
+	<string name="about_abo">Subscribe</string>
+	<string name="about_discover">Discover</string>
+	<string name="about_connect">Sign in</string>
+	<string name="close">Close</string>
+	<string name="replay">Replay</string>
+	<string name="share">Share</string>
+	<string name="logo">Logo</string>
+	<string name="help">Help</string>
+	<string name="parental_control">Parental control</string>
+	<string name="disable">Disable</string>
+	<string name="enable">Enable</string>
+	<string name="wrong_code">Wrong code</string>
+	<string name="video_filter">Filter videos :</string>
+	<string name="parental_notice">*Parental control will be disabled in case of disconnection of your noco account or if you enter the code above.</string>
+			
+	<string name="list_group_most_recent">The most recent</string>
+	<string name="list_group_most_popular">The most popular</string>
+	<string name="list_group_recommended">Recommended</string>
+	<string name="list_group_my_subscriptions">My subscriptions</string>
+	<string name="list_group_my_video_bought">My videos bought</string>
+	<string name="list_group_my_playlist">My playlist</string>
+	<string name="list_group_my_favorites">My favorites</string>
+	<string name="list_group_my_videos">My videos</string>
+	<string name="list_group_options">Options</string>
+
+	<string name="list_subgroup_playlist">Check my playlist</string>
+	<string name="list_subgroup_playlist_add">Add/remove videos</string>
+	<string name="list_subgroup_favorites">Check my favorites</string>
+	<string name="list_subgroup_favorites_add">Add/remove videos</string>
+	<string name="list_subgroup_watched">Watched</string>
+	<string name="list_subgroup_not_watched">Not watched</string>
+	<string name="list_subgroup_recorded">Recorded</string>
+	<string name="list_subgroup_thumbs_quality">Thumbs quality</string>
+	<string name="list_subgroup_videos_quality">Videos quality</string>
+	<string name="list_subgroup_parental_control">Parental control</string>
+
+	<string name="config_video_quality">Default quality for videos:</string>
+	<string name="config_video_lang">Default language for videos:</string>
+	<string name="config_video_sub">Default Language for subtitles:</string>
+	
+	<string name="video_tab_info">Information</string>
+	<string name="video_tab_comments">Comments</string>
+	<string name="video_tab_notation">Notation</string>
+	<string name="video_free">Video free !</string>
+	<string name="video_save">Save</string>
+	<string name="video_delete">Delete</string>
+	<string name="video_limit">Limit:</string>
+	<string name="video_inaccessible">Video not available for the moment.</string>
+	<string name="tchat">Chat</string>
+	<string name="notation_general">Average score :</string>
+	<string name="notation_user">Your score :</string>
+	<string name="twitch_welcome">Welcome on the chat of Nolife !</string>
+
+	<string name="prefix_season">S</string>
+	<string name="prefix_episode">E</string>
+	<string name="suffix_episode"></string>
+	
+	<string name="download_start">Start downloading&#8230;</string>
+	<string name="download_progress">Download in progress&#8230; </string>
+	<string name="download_end">Download complete.</string>
+	<string name="disconnect">Log out</string>
+	
+	<string name="error_f_eacces">An error occurred while writing the file : Permission denied.</string>						
+	<string name="error_f_enospc">An error occurred while writing the file : Not enough memory left.</string>						
+	<string name="error_f_default">An error occurred while writing the file.</string>						
+			
+	<string name="mail_message">noco is a new generation vod service. Multi-catalog, HD and discovery, service of quality : noco will simplify your life !\n\nYou can also watch this video on Android with noconoco :</string>
+
+	<string name="video_sub">Subtitles :</string>
+	<string name="video_lang">Language :</string>
+    <string name="chromecast">Chromecast</string>
+    <string name="list_group_nolife_mugen">Nolife ∞</string>
+    <string name="none" />
+    <string name="code">Code</string>
+</resources>

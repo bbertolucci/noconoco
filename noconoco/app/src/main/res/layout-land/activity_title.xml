@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/none"
+        android:src="@drawable/img_title_noco" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/back_btn_blue_transparent2"
+        android:shadowColor="#FF000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="\?"
+        android:textColor="@drawable/selector_btn"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/abo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/back_btn_blue_transparent2"
+        android:padding="10dp"
+        android:shadowColor="#FFFFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="@string/about_abo"
+        android:textColor="@drawable/selector_btn"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/discover"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/abo"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="98dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/back_btn_blue_transparent2"
+        android:padding="10dp"
+        android:shadowColor="#FFFFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="@string/about_discover"
+        android:textColor="@drawable/selector_btn"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignEnd="@+id/about"
+        android:layout_alignRight="@+id/about"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/back_btn_blue_transparent2"
+        android:padding="10dp"
+        android:shadowColor="#FFFFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:text="@string/about_connect"
+        android:textColor="@drawable/selector_btn"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:shadowColor="#FF000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:textColor="@drawable/selector_btn"
+        android:textSize="20sp"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>

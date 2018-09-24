@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">noconoco</string>
+    <string name="app_name_off">noconoco offline</string>
+    <string name="action_settings">Settings</string>
+    <string name="thumbnail_low">Qualité faible</string>
+    <string name="thumbnail_normal">Qualité normale</string>
+    <string name="thumbnail_high">Qualité élevée</string>
+    <string name="error_webview">Erreur du chargement de la page : \nSite web inaccessible</string>
+	<string name="loading_thumb">Chargement des miniatures</string>
+	<string name="loading_retry">Tentative de connection</string>
+	<string name="loading_progress">Chargement en cours&#8230;</string>
+	<string name="network_error">Erreur réseau&#8230;</string>
+	<string name="about">Application créée par Bertolucci Bruno (King Pingouin) pour noco.</string>
+	<string name="about_abo">S\'abonner</string>
+	<string name="about_discover">Découvrir</string>
+	<string name="about_connect">Se connecter</string>
+	<string name="close">Fermer</string>
+	<string name="replay">Rejouer</string>
+	<string name="share">Partager</string>
+	<string name="logo">Logo</string>
+	<string name="help">Aide</string>
+	<string name="parental_control">Controle parental</string>
+	<string name="disable">Désactiver</string>
+	<string name="enable">Activer</string>
+	<string name="wrong_code">Code incorrect</string>
+	<string name="video_filter">Filtrer les vidéos :</string>
+	<string name="parental_notice">*Le controle parental sera désactivé en cas de déconnection de votre compte noco ou si vous saisissez le code ci dessus.</string>
+			
+	<string name="list_group_most_recent">Les plus récentes</string>
+	<string name="list_group_most_popular">Les plus populaires</string>
+	<string name="list_group_recommended">Les vidéos recommandées</string>
+	<string name="list_group_my_subscriptions">Mes abonnements</string>
+	<string name="list_group_my_video_bought">Mes vidéos achetées</string>
+	<string name="list_group_my_playlist">Ma playlist</string>
+	<string name="list_group_my_favorites">Mes favorites</string>
+	<string name="list_group_my_videos">Mes vidéos</string>
+	<string name="list_group_options">Options</string>
+
+	<string name="list_subgroup_playlist">Voir ma playlist</string>
+	<string name="list_subgroup_playlist_add">Ajouter/supprimer des vidéos</string>
+	<string name="list_subgroup_favorites">Voir mes favorites</string>
+	<string name="list_subgroup_favorites_add">Ajouter/supprimer des vidéos</string>
+	<string name="list_subgroup_watched">Vues</string>
+	<string name="list_subgroup_not_watched">Non vues</string>
+	<string name="list_subgroup_recorded">Enregistrées</string>
+	<string name="list_subgroup_thumbs_quality">Qualité miniatures</string>
+	<string name="list_subgroup_videos_quality">Qualité vidéos</string>
+	<string name="list_subgroup_parental_control">Controle parental</string>
+
+	<string name="config_video_quality">Qualité par défaut des vidéos:</string>
+	<string name="config_video_lang">Langue préférée pour les vidéos:</string>
+	<string name="config_video_sub">Langue des sous-titres:</string>
+	
+	<string name="video_tab_info">Information</string>
+	<string name="video_tab_comments">Commentaires</string>
+	<string name="video_tab_notation">Notation</string>
+	<string name="video_free">Vidéo gratuite !</string>
+	<string name="video_save">Enregistrer</string>
+	<string name="video_delete">Supprimer</string>
+	<string name="video_limit">Limite:</string>
+	<string name="video_inaccessible">Vidéo inaccessible pour le moment.</string>
+	<string name="tchat">Tchat</string>
+	<string name="notation_general">Moyenne générale :</string>
+	<string name="notation_user">Votre note :</string>
+	<string name="twitch_welcome">Bienvenue sur le tchat de Nolife !</string>
+
+	<string name="prefix_season">S</string>
+	<string name="prefix_episode">E</string>
+	<string name="suffix_episode"></string>
+		
+	<string name="download_start">Début du téléchargement&#8230;</string>
+	<string name="download_progress">Téléchargement en cours&#8230; </string>
+	<string name="download_end">Téléchargement terminé.</string>
+	<string name="disconnect">Se déconnecter</string>
+	
+	<string name="error_f_eacces">Erreur d\'écriture du fichier : Permission refusée.</string>						
+	<string name="error_f_enospc">Erreur d\'écriture du fichier : Pas assez d\'espace mémoire.</string>						
+	<string name="error_f_default">Erreur d\'écriture du fichier.</string>						
+	
+	<string name="mail_message">noco est le service de vidéo par abonnement nouvelle génération. Multi-catalogues, HD et découverte, service de qualité : noco va vous simplifier la vie !\n\nRetrouvez également cette vidéo sur Android avec noconoco :</string>
+
+	<string name="video_sub">Sous-titres :</string>
+	<string name="video_lang">Langue :</string>
+    <string name="chromecast">Chromecast</string>
+    <string name="list_group_nolife_mugen">Nolife ∞</string>
+    <string name="none" />
+    <string name="code">Code</string>
+</resources>
