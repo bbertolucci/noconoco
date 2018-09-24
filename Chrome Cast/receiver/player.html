@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cast Reference Receiver</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="player.css" />
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript"
+        src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js">
+  </script>
+  <script type="text/javascript"
+        src="//www.gstatic.com/cast/sdk/libs/mediaplayer/1.0.0/media_player.js"></script>
+  <script type="text/javascript" src="player.js"></script>
+  <script>
+  $(function() {
+	$("div:last").hide();
+  });
+  </script>
+</head>
+<body style="margin: 0;">
+    <div id="player" class="player">
+        <div class="media">
+            <video></video>
+        </div>
+		<div id="logo">
+		<img src="assets/logo-bleu.png" style="display:block; width:initial; height:initial;top:0px;-webkit-transform: rotate(-7deg);background-color: transparent;"/>
+		<img src="assets/logo-blanc.png" style="display:block; width:initial; height:initial;top:110px;-webkit-transform: rotate(-7deg);background-color: transparent;"/>
+		<img src="assets/logo-rouge.png" style="display:block; width:initial; height:initial;top:220px;-webkit-transform: rotate(-7deg);background-color: transparent;"/>
+		</div>
+        <div class="logooeil"></div>
+        <div class="previewfamily"></div>
+        <div class="previewtitle"></div>
+        <div class="previewepisode"></div>
+        <div class="previewtype"></div>
+        <div class="previewresume" style="display:none"></div>
+        <div class="previewduration"></div>
+        <div class="previewlang"></div>
+        <div class="previewsublang"></div>
+        <div class="previewquality"></div>
+		<div class="previewlogo"></div>
+        <div class="preview"></div>
+        <div class="logo"></div>
+        <div class="spinner"></div>
+        <div class="watermark"></div>
+        <div class="gradient"></div>
+        <div class="overlay">
+            <div class="media-info">
+                <div class="media-artwork"></div>
+                <div class="media-text">
+                    <div class="media-title"></div>
+                    <div class="media-subtitle"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <span class="controls-play-pause"></span>
+                <span class="controls-cur-time"></span>
+                <span class="controls-total-time"></span>
+                <div class="controls-progress">
+                    <div class="controls-progress-inner progressBar"></div>
+                    <div class="controls-progress-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      var playerDiv = document.getElementById('player');
+      new sampleplayer.CastPlayer(playerDiv).start();
+    </script>
+</body>
+</html>

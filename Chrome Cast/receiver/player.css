@@ -1,0 +1,766 @@
+/* 
+ * Copyright 2014 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+**/
+
+/* NOTE: this must be first statement in file to work on device */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+/* ------------------------------------------------- */
+/* Animations                                        */
+/* ------------------------------------------------- */
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes loading {
+  0% { margin-left: -100%; }
+  100% { margin-left: 100%; }
+}
+
+/* ------------------------------------------------- */
+/* Player                                            */
+/* ------------------------------------------------- */
+
+body {
+  background-color: #000;
+}
+
+.player {
+  /*background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  color: #f1f1f1;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.player .preview {
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+/*  background-image: url("http://media.noco.tv/screenshot/nol/1024x576/f/1/VAC_IMM_S14_ATable_180262.jpg");*/
+  top: 200px;
+  right: 80px;
+  width: 466px;
+  height: 262px;
+}
+.player .previewlogo {
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /*background-image: url("http://media.noco.tv/partner/logo_player/nol.svg");*/
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  width: 535px;
+  height: 168px;
+}
+.player .previewfamily {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  color:#fff;
+  font-size:30px;
+  font-weight: bold;
+  width: 550px;
+}
+.player .previewtitle {
+  display: none;
+  position: absolute;
+  top: 240px;
+  left: 40px;
+  color:#00ACE7;
+  font-size:40px;
+  font-weight: bold;
+  width: 550px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.player .previewepisode {
+  display: none;
+  position: absolute;
+  top: 290px;
+  left: 40px;
+  color:#00ACE7;
+  font-size:20px;
+  font-weight: bold;
+  width: 550px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.player .previewtype {
+  display: none;
+  position: absolute;
+  top: 330px;
+  left: 20px;
+  width: 550px;
+  white-space: nowrap;
+}
+.player .previewtype span{
+  color:#fff;
+  background-color: #00ACE7;
+  font-size:15px;
+  font-weight: bold;
+  border: 3px solid #00ACE7;
+  border-radius: 15px;
+  padding:5px;
+  margin-right:10px;
+  -webkit-text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  -moz-text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+}
+
+.player .previewresume {
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  /*background-image: url("http://media.noco.tv/family/slider/nol/pol.jpg");*/
+  position: absolute;
+  top: 370px;
+  left: 20px;
+  color:#fff;
+  font-size:20px;
+  font-weight: bold;
+  width: 550px;
+  min-height: 194px;
+  border: 3px solid #00ACE7;
+  border-radius: 15px;
+  padding:10px;
+  -webkit-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+  -moz-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+  text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+}
+.player .previewduration {
+  display: none;
+  position: absolute;
+  top: 470px;
+  left: 910px;
+  color: #00ACE7;
+  font-size: 20px;
+  font-weight: bold;
+  width: 90px;
+  text-align: center;
+}
+.player .previewlang {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  white-space: nowrap;
+}
+.player .previewsublang {
+  display: none;
+  position: absolute;
+  top: 650px;
+  left: 650px;
+  white-space: nowrap;
+}
+.player .previewlang span, .player .previewsublang span{
+  color:#fff;
+  background-color: rgb(63, 67, 98);
+  font-size:15px;
+  font-weight: bold;
+  border: 3px solid #00ACE7;
+  border-radius: 20px;
+  padding:5px;
+  margin-right:10px;
+  -webkit-text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  -moz-text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  width: 20px;
+  float: right;
+  height: 20px;
+  text-align: center;
+}
+.player .previewsublang span{
+  float: left;
+}
+.player .previewlang span[state="active"], .player .previewsublang span[state="active"]{
+  background-color: #00ACE7;
+  border: 3px solid #ffffff;
+}
+.player .previewsublang span[state="text"]{
+  position: relative;
+  top:5px;
+  background-color: transparent;
+  border: 0px;
+  float: left;
+  width: initial;
+}
+.player .previewquality {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 690px;
+  white-space: nowrap;
+  width:50px;
+  z-index:10000;
+}
+.player .previewquality span{
+  color:#fff;
+  background-color: rgb(63, 67, 98);
+  font-size:15px;
+  font-weight: bold;
+  border: 3px solid #00ACE7;
+  border-radius: 40px;
+  padding:0px;
+  padding-top:10px;
+  -webkit-text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  -moz-text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  text-shadow: -3px 0 3px #006587, 3px 0 3px #006587, 0 -3px 3px #006587, 0 3px 3px #006587;
+  width: 40px;
+  float: left;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.player .previewquality span[state="active"]{
+  background-color: #00ACE7;
+  border: 3px solid #ffffff;
+}
+.player .logo {
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+  background-image: url("assets/noco-neutre.png");
+  top: -166px;
+  right: 25px;
+  width: 616px;
+  height: 800px;
+}
+.player .logooeil {
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+  background-image: url("assets/noco-oeil.png");
+  top: -166px;
+  right: 25px;
+  width: 616px;
+  height: 800px;
+}
+
+.player .gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.player img, .player video {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.player .media-info {
+  padding-bottom: 54px;
+  display: flex;
+}
+
+.player .media-artwork {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  align-self: flex-end;
+  height: 143px;
+  margin-right: 32px;
+  min-width: 96px;
+}
+
+.player .media-text {
+  width: 100%;
+  align-self: flex-end;
+}
+
+.player .media-info .media-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+
+.player .media-info .media-subtitle {
+  color: rgba(203, 203, 203, 0.8);
+  font-size: 22px;
+  overflow: hidden;
+  width: 80%;
+}
+
+.player .media-info .media-subtitle span:not(:first-child):before {
+  content: '\00B7';
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.player .controls {
+  display: none;
+  bottom: 0;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.player .controls-play-pause {
+  background-size: cover;
+  border: 0;
+  float: left;
+  height: 36px;
+  margin-left: -4px;
+  margin-top: -3px;
+  width: 32px;
+}
+
+.player .overlay {
+  position: absolute;
+  left: 64px;
+  bottom: 64px;
+  right: 64px;
+  display: none;
+  top: auto;
+}
+
+.player .watermark {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  bottom: 64px;
+  right: 64px; 
+  display: none;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  margin-bottom: 54px;
+  background-image: url("assets/watermark.png");
+}
+
+.player .gradient {
+  display: none;
+  opacity: 0.9;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.0) 72%,
+    rgba(0, 0, 0, 0.0) 100%
+  );
+}
+
+.player .progressBar {
+  background-color: #00ace7;
+}
+
+.player .controls-progress {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 8px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  overflow: hidden;
+  position: relative;
+}
+
+.player .controls-progress-inner {
+  height: 100%;
+  opacity: 0.8;
+}
+
+.player .controls-progress-thumb {
+  height: 100%;
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  margin-left: -3px;
+}
+
+.player .controls-cur-time,
+.player .controls-total-time {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.player .controls-cur-time {
+  float: left;
+  line-height: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.player .controls-total-time {
+  float: right;
+  line-height: 30px;
+  margin-left: 15px;
+}
+
+/* ------------------------------------------------- */
+/* Launching                                         */
+/* ------------------------------------------------- */
+
+.player[state="launching"] .overlay {
+  display: block;
+}
+
+.player[state="launching"] .previewlogo {
+  display: block;
+}
+
+.player[state="launching"] .preview {
+  display: block;
+}
+
+.player[state="launching"] .previewfamily {
+  display: block;
+}
+.player[state="launching"] .previewtitle {
+  display: block;
+}
+.player[state="launching"] .previewepisode {
+  display: block;
+}
+.player[state="launching"] .previewtype {
+  display: block;
+}
+.player[state="launching"] .previewresume {
+  display: block;
+}
+.player[state="launching"] .previewduration {
+  display: block;
+}
+.player[state="launching"] .previewlang {
+  display: block;
+}
+.player[state="launching"] .previewsublang {
+  display: block;
+}
+.player[state="launching"] .previewquality{
+  display: block;
+}
+.player[state="launching"] .logo {
+  display: block;
+}
+.player[state="launching"] .logooeil {
+  display: block;
+}
+.player[state="launching"] .controls,
+.player[state="launching"] .media-info,
+.player[state="launching"] .media-artwork {
+  display: none;
+}
+
+.player[state="launching"] .spinner {
+  -webkit-animation: spin 1s infinite linear;
+  height: 36px;
+  width: 32px;
+  display: block;
+  position: absolute;
+  background-image: url("assets/buffering.png");
+  bottom: 64px;
+  left: 50%;
+  margin-left: 32px / -2;
+}
+/* ------------------------------------------------- */
+/* Loading                                           */
+/* ------------------------------------------------- */
+
+.player[state="loading"] .overlay,
+.player[state="loading"] .controls,
+.player[state="loading"] .watermark {
+  display: block;
+}
+
+.player[state="loading"] .controls-cur-time,
+.player[state="loading"] .controls-total-time,
+.player[state="loading"] .controls-progress-thumb,
+.player[state="loading"] .controls-play-pause {
+  display: none;
+}
+
+.player[state="loading"] .controls-progress-inner {
+  width: 90% !important;
+  -webkit-animation: loading 2s infinite linear;
+}
+
+/* ------------------------------------------------- */
+/* Buffering                                         */
+/* ------------------------------------------------- */
+
+.player[state="buffering"] .overlay,
+.player[state="buffering"] .gradient {
+  display: block;
+  visibility: visible;
+}
+
+.player[state="buffering"] .gradient {
+  opacity: 0.1;
+}
+
+.player[state="buffering"] .media-artwork,
+.player[state="buffering"] .media-info {
+  display: none;
+}
+
+.player[state="buffering"] .controls {
+  display: block;
+}
+
+.player[state="buffering"] .controls-play-pause {
+  background-image: url("assets/buffering.png");
+  -webkit-animation: spin 1s infinite linear;
+}
+
+.player[state="buffering"][live="true"] .controls-cur-time,
+.player[state="buffering"][live="true"] .controls-total-time,
+.player[state="buffering"][live="true"] .controls-progress {
+  display: none !important;
+}
+
+.player[state="buffering"] video {
+  display: block;
+}
+
+.player[state="buffering"] .media-info,
+.player[state="buffering"]:not(.seeking) .controls-cur-time,
+.player[state="buffering"]:not(.seeking) .controls-total-time,
+.player[state="buffering"]:not(.seeking) .controls-progress {
+  display: none;
+}
+
+/* ------------------------------------------------- */
+/* Paused                                            */
+/* ------------------------------------------------- */
+
+.player[state="paused"] .overlay,
+.player[state="paused"] .gradient,
+.player[state="paused"] .watermark {
+  display: block;
+  visibility: visible;
+}
+
+.player[state="paused"] .controls-play-pause {
+  background-image: url("assets/paused.png");
+}
+
+.player[state="paused"] .controls,
+.player[state="paused"] .watermark,
+.player[state="paused"]:not(.seeking) .controls-cur-time,
+.player[state="paused"]:not(.seeking) .controls-total-time,
+.player[state="paused"]:not(.seeking) .controls-progress {
+  display: block;
+}
+
+.player[state="paused"][live="true"] .controls-cur-time,
+.player[state="paused"][live="true"] .controls-total-time,
+.player[state="paused"][live="true"] .controls-progress {
+  display: none !important;
+}
+
+.player[state="paused"] video {
+  display: block;
+}
+
+.player[state="paused"]:not(.seeking) .controls-cur-time,
+.player[state="paused"]:not(.seeking) .controls-total-time,
+.player[state="paused"]:not(.seeking) .controls-progress {
+  opacity: 1;
+  -webkit-transition: opacity 1s linear 5s;
+}
+
+.player[state="paused"] .media-info {
+  opacity: 0;
+  -webkit-transition: opacity 1s linear 5s;
+}
+
+.player[state="paused"] .gradient {
+  opacity: 0.1;
+  -webkit-transition: opacity 1s linear 5s;
+}
+
+/* ------------------------------------------------- */
+/* Playing                                           */
+/* ------------------------------------------------- */
+
+.player[state="playing"] .overlay,
+.player[state="playing"] .gradient,
+.player[state="playing"] .watermark {
+  display: block;
+  visibility: hidden;
+}
+
+.player[state="playing"].seeking .overlay,
+.player[state="playing"].seeking .gradient {
+  display: block;
+  visibility: visible;
+}
+
+.player[state="playing"].seeking .media-info {
+  display: none;
+}
+
+.player[state="playing"].seeking .controls {
+  display: block;
+}
+
+.player[state="playing"] .controls-play-pause {
+  background-image: url("assets/buffering.png");
+  -webkit-animation: spin 1s infinite linear;
+}
+
+.player[state="playing"]:not(.seeking) .controls-play-pause {
+  display: none;
+}
+
+.player[state="playing"]:not(.seeking) .controls-cur-time {
+  margin-left: 0;
+}
+
+.player[state="playing"][live="true"] .controls-cur-time,
+.player[state="playing"][live="true"] .controls-total-time,
+.player[state="playing"][live="true"] .controls-progress {
+  display: none !important;
+}
+
+.player[state="playing"] video {
+  display: block;
+}
+
+/* ------------------------------------------------- */
+/* Stalled                                           */
+/* ------------------------------------------------- */
+
+.player[state="stalled"] .previewlogo {
+  display: block;
+}
+.player[state="stalled"] .preview {
+  display: block;
+}
+.player[state="stalled"] .previewfamily {
+  display: block;
+}
+.player[state="stalled"] .previewtitle {
+  display: block;
+}
+.player[state="stalled"] .previewepisode {
+  display: block;
+}
+.player[state="stalled"] .previewtype {
+  display: block;
+}
+.player[state="stalled"] .previewresume {
+  display: block;
+}
+.player[state="stalled"] .previewduration {
+  display: block;
+}
+.player[state="stalled"] .previewlang {
+  display: block;
+}
+.player[state="stalled"] .previewsublang {
+  display: block;
+}
+.player[state="stalled"] .previewquality {
+  display: block;
+}
+.player[state="stalled"] .logo {
+  display: block;
+}
+.player[state="stalled"] .logooeil {
+  display: block;
+}
+/* ------------------------------------------------- */
+/* Idle                                              */
+/* ------------------------------------------------- */
+
+.player[state="idle"] .overlay {
+  display: none;
+}
+
+.player[state="idle"] .previewlogo {
+  display: block;
+}
+
+.player[state="idle"] .preview {
+  display: block;
+}
+.player[state="idle"] .previewfamily {
+  display: block;
+}
+.player[state="idle"] .previewtitle {
+  display: block;
+}
+.player[state="idle"] .previewepisode {
+  display: block;
+}
+.player[state="idle"] .previewtype {
+  display: block;
+}
+.player[state="idle"] .previewresume {
+  display: block;
+}
+.player[state="idle"] .previewduration {
+  display: block;
+}
+.player[state="idle"] .previewlang {
+  display: block;
+}
+.player[state="idle"] .previewsublang {
+  display: block;
+}
+.player[state="idle"] .previewquality {
+  display: block;
+}
+.player[state="idle"] .logo {
+  display: block;
+}
+.player[state="idle"] .logooeil {
+  display: block;
+}
+.player[state="idle"] .spinner {
+  display: none;
+}
+/* ------------------------------------------------- */
+/* Done                                              */
+/* ------------------------------------------------- */
+
+.player[state="done"] .overlay {
+  display: none;
+}
+
+.player[state="done"] {
+  background-image: url('assets/done.png');
+}
